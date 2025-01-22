@@ -1,0 +1,10 @@
+{
+    "name": "cat popup extension",
+    "description": "Shows a randomly selected cat in a popup window",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "cat.html",
+        "default_icon": "default_icon"
+    }
+}
