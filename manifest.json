@@ -1,10 +1,19 @@
 {
-    "name": "cat popup extension",
-    "description": "Shows a randomly selected cat in a popup window",
-    "version": "1.0",
-    "manifest_version": 3,
-    "action": {
-        "default_popup": "cat.html",
-        "default_icon": "default_icon.png"
+  "manifest_version": 3,
+  "name": "Silly Cat Viewer",
+  "version": "1.0",
+  "description": "Displays a silly cat picture.",
+  "permissions": [
+    "activeTab" 
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*"], 
+      "matches": ["<all_urls>"] 
     }
+  ], 
+  "action": {
+    "default_popup": "cat.html",
+    "default_icon": "default_icon.png"
+  }
 }
